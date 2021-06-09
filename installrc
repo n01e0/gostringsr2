@@ -1,0 +1,3 @@
+# r2-macros for gostringsr2
+(gostr; "#!pipe gostringsr2 -n 4")
+(gostrn n; "#!pipe gostringsr2 -n $0")

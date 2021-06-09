@@ -18,7 +18,7 @@ v1.0.0 code walkthrough - https://carvesystems.com/news/reverse-engineering-go-b
 From Github:
 
 ```
-pip install git+https://github.com/carvesystems/gostringsr2
+pip install git+https://github.com/n01e0/gostringsr2
 ```
 
 or
@@ -26,7 +26,7 @@ or
 Locally:
 
 ```
-git clone https://github.com/carvesystems/gostringsr2
+git clone https://github.com/n01e0/gostringsr2
 pip install -e gostringsr2
 ```
 
