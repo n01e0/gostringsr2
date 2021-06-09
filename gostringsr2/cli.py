@@ -10,7 +10,7 @@ def printe(*args, **kwargs):
 
 
 @click.command()
-@click.argument("file")
+@click.argument("file", required=False)
 @click.option(
     "-n", "length", is_flag=False, default=4, help="minimum length, default=4"
 )
@@ -21,7 +21,7 @@ def printe(*args, **kwargs):
 )
 def main(file, length, verbose, utf8, r2script):
 
-    if not path.isfile(file):
+    if (not file is None) and (not path.isfile(file)):
         printe("invalid file {}".format(file))
         return 1
 

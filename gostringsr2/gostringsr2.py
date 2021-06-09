@@ -63,7 +63,10 @@ class GoStringsR2:
         """
 
         self.log("Loading file into r2: {}".format(self.file))
-        self.r2 = r2pipe.open(self.file)
+        if self.file is None:
+            self.r2 = r2pipe.open()
+        else:
+            self.r2 = r2pipe.open(self.file)
         self.data = {}
         self.data["info"] = self.runjson("ij")
         if "bin" not in self.data["info"]:
